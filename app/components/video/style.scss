@@ -1,0 +1,87 @@
+@import './rwd_setup.scss';
+
+.sun_video{
+    width            : 100%;
+    display          : flex;
+    flex-wrap        : wrap;
+    flex-direction   : row;
+    touch-action     : manipulation;
+    .video_wrap{
+        height           : 100%;
+        position         : relative;
+        align-items     : center;
+        &:-webkit-full-screen,&:-moz-full-screen,&:-ms-full-screen,&:full-screen{
+            width           : 100%;
+            height          : 100%;
+            position        : fixed;
+            z-index         : 10;
+        }
+        &.nenu_true{
+            flex            : 4;
+            display         : inline-flex;
+        }
+        video{
+            width           : 100%;
+            height          : 100%;
+            background      : #000;
+        }
+        .vider_header{
+            width            : 100%;
+            height           : 50px;
+            padding          : 0px 40px 0px 5px;
+            display          : flex;
+            align-items      : center;
+            justify-content  : space-between;
+            background       : -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+            background       : -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+            background       : linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+            filter           : progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+            position         : absolute;
+            z-index          : 5;
+            top              : 0px;
+            color            : #fff;
+            h3{
+                font-size        : 1em;
+                white-space      : nowrap;
+                text-overflow    : ellipsis;
+                overflow         : hidden;
+            }
+        }
+    }
+
+    @include video_min {
+        .video_wrap{
+            .vider_header{
+                height           : 45px;
+                padding          : 0px 100px 0px 5px;
+                h3{
+                    font-size        : 0.8em;
+                }
+            }
+        }
+    }
+
+    @include video_phone {
+        max-height       : 100vh !important;
+        flex-direction   : column;
+        .video_wrap{
+            &.nenu_true{
+                flex            : 1;
+            }
+            .vider_header{
+                height           : 40px;
+                padding          : 0px 100px 0px 5px;
+                h3{
+                    font-size        : 0.8em;
+                }
+            }
+            video{
+                height   : 100% !important;
+            }
+        }
+        &.true{
+            height      : 100vh;
+        }
+    }
+}
+

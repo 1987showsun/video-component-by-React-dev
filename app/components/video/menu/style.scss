@@ -1,0 +1,153 @@
+@import '../rwd_setup.scss';
+
+.video_menu_wrap{
+    flex           : 1;
+    min-width      : 320px;
+    background     : #111;
+    .menu_title{
+        width             : 100%;
+        height            : 45px;
+        padding           : 0px 10px;
+        background        : #111;
+        display           : flex;
+        align-items       : center;
+        justify-content   : space-between;
+        position          : sticky;
+        z-index           : 5;
+        top               : 0px;
+        font-size         : 0.9em;
+        color             : #fff;
+        >.btn{
+            width              : 30px;
+            height             : 30px;
+            display            : none;
+            align-items        : center;
+            justify-content    : center;
+            cursor             : pointer;
+            .icon{
+                width             : 100%;
+                height            : 100%;
+                display           : flex;
+                justify-content   : center;
+                svg{
+                    width           : 60%;
+                }
+            }
+        }
+        @include video_phone{
+            >.btn{
+                display             : flex; 
+                transform           : rotate(90deg);
+            }
+        }
+    }
+    .video_menu_ul{
+        width          : 100%;
+        >li{
+            width          : 100%;
+            border-bottom  : 1px solid #222;
+            &.active{
+                background        : #222;
+                figcaption{
+                    color             : $mainColor;
+                }
+            }
+            >figure{
+                width             : 100%;
+                padding           : 14px 10px 14px 10px;
+                display           : flex;
+                align-items       : center;
+                cursor            : pointer;
+                img{
+                    width            : 25%;
+                    min-width        : 50px;
+                    display          : inline-flex;
+                }
+                figcaption{
+                    width            : 75%;
+                    display          : inline-flex;
+                    padding-left     : 10px;
+                    color            : #fff;
+                    h3{
+                        font-size        : 0.8em;
+                        line-height      : 1.7em;
+                    }
+                }
+            }
+            &:first-child{
+                >figure{
+                }
+            }
+        }
+    }
+
+    @include video_embed{
+        min-width       : 380px;
+        .video_menu_ul{
+            img{
+                width            : 30% !important;
+            }
+            figcaption{
+                width            : 70% !important;
+            }
+        }
+    }
+
+    @include video_pc{
+        min-width       : 350px;
+        .video_menu_ul{
+            img{
+                width            : 28% !important;
+            }
+            figcaption{
+                width            : 72% !important;
+            }
+        }
+    }
+
+    @include video_pad{
+        min-width       : 320px;
+        .video_menu_ul{
+            img{
+                width            : 26% !important;
+            }
+            figcaption{
+                width            : 74% !important;
+            }
+        }
+    }
+
+    @include video_min{
+        min-width       : 200px;
+        .video_menu_ul{
+            img{
+                display          : none !important;
+            }
+            figcaption{
+                width            : 100% !important;
+                padding-left     : 0px !important;
+            }
+        }
+    }
+
+    @include video_phone{
+        flex  : 2;
+        &.false{
+            height: auto !important;
+        }
+        .video_menu_ul{
+            display           : none;
+            img{
+                width           : 30% !important;
+                
+            }
+            figcaption{
+                width            : 70% !important;
+            }
+            &.true{
+                display: flex;
+                flex-direction: column; 
+            }
+        }
+    }
+}

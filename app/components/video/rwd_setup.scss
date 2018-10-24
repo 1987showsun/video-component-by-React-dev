@@ -1,0 +1,31 @@
+$mainColor : #69bdff;
+
+@mixin video_embed{
+    @media all and (min-width: 1481px) {
+       @content;
+    }
+}
+
+@mixin video_pc{
+    @media all and (max-width: 1481px) and (min-width: 1280px) {
+       @content;
+    }
+}
+
+@mixin video_pad{
+    @media all and (max-width: 1279px) and (min-width: 860px) {
+       @content;
+    }
+}
+
+@mixin video_min{
+    @media all and (max-width: 859px) and (min-width: 600px) {
+       @content;
+    }
+}
+
+@mixin video_phone{
+    @media all and (max-width: 599px) {
+       @content;
+    }
+}
