@@ -22,7 +22,7 @@ title    : playing video title
 src      : video file path/src
 poster   : video player init main image
 
-#Api
+# Api
 
 | Api                 | type              | method                                                               |
 | ------------------- | ----------------- | -------------------------------------------------------------------- |
