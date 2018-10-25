@@ -1,12 +1,12 @@
 # Video Play component to React
 
-# NPM
+## NPM
 npm i react-videoplayer-beta
 
-# Demo
+## Demo
 [Demo](https://1987showsun.github.io/video-component-by-React-dev/index.html)
 
-# data
+## data
 ```json
   [
     {
@@ -22,7 +22,7 @@ title    : playing video title
 src      : video file path/src
 poster   : video player init main image
 
-# Api
+## Api
 
 | Api                 | type              | method                                                               |
 | ------------------- | ----------------- | -------------------------------------------------------------------- |
