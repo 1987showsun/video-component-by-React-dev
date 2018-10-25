@@ -1,5 +1,8 @@
 # Video Play component to React
 
+## Description
+The player supports responsive and mobile devices
+
 ## NPM
 ```js
 npm i react-player-beta
