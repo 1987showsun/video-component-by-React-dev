@@ -14,11 +14,11 @@ export default class Index extends React.Component{
         super(props);
 
         this.state = {
-            data              : props['data']           || [],
-            menu              : props['menu']           || {"switch":false},
-            selectedPlay      : props['selectedPlay']   || 0,
-            videoTitle        : props['videoTitle']     || "Sun Video Player",
-            videoSrc          : props['videoSrc']       || null,
+            data              : props['data']               || [],
+            menu              : props['menu']               || {"switch":false},
+            selectedPlay      : props['initSelectedPlay']   || 0,
+            videoTitle        : props['videoTitle']         || "Sun Video Player",
+            videoSrc          : props['videoSrc']           || null,
             videoWrap         : React.createRef(),
             video             : null,
             repeatStatus      : 0,

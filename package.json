@@ -1,6 +1,6 @@
 {
   "name": "react-player-beta",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "commonjs/index.js",
   "description": "React player",
   "author": "showsunli",

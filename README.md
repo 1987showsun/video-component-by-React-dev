@@ -44,3 +44,4 @@ poster   : video player init main image <br/>
 | ------------------- | ----------------- | -------------------------------------------------------------------- |
 | data                | Object            | Object keys:id,title,src,poster                                      |
 | menu                | Object            | Object keys: swtch: fslae/true(init:false),titile : "Menu head text" |
+| initSelectedPlay    | number            | initSelectedPlay = {"1,2,3,...."}                                    |

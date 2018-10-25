@@ -74,6 +74,7 @@ export default class Index extends React.Component{
             "switch" : true,
             "title"  : "Menu"
           }}
+          initSelectedPlay = {"1"}
         />
       </div>
     )
