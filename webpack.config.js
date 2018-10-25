@@ -18,7 +18,7 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   inject    : "body"
 });
 
-const contextFilePath    = env.NODE_ENV_REDUX_BUILD=="true"? ""       : "/components/form";
+const contextFilePath    = env.NODE_ENV_REDUX_BUILD=="true"? ""       : "/components/video";
 const libraryTargetType  = env.NODE_ENV_REDUX_BUILD=="true"? "umd"    : "commonjs2";
 const externalsType      = env.NODE_ENV_REDUX_BUILD=="true"? {}       : {'react': 'commonjs react'};
 const CWP                = env.NODE_ENV_REDUX_BUILD=="true"? [{ from: "./assets", to: "assets" }] : [];
@@ -111,7 +111,7 @@ module.exports = {
     new webpack.DefinePlugin({
       "process.env"    : env
     }),
-    //new CopyWebpackPlugin( CWP ),
+    new CopyWebpackPlugin( CWP ),
     new webpack.ProvidePlugin({
       $                : "jquery",
       jQuery           : "jquery",
