@@ -23,7 +23,8 @@ src      : video file path/src
 poster   : video player init main image
 
 #Api
-|  Api                | type              | method                                                               |
+
+| Api                 | type              | method                                                               |
 | ------------------- | ----------------- | -------------------------------------------------------------------- |
 | data                | Object            | Object keys:id,title,src,poster                                      |
 | menu                | Object            | Object keys: swtch: fslae/true(init:false),titile : "Menu head text" |
