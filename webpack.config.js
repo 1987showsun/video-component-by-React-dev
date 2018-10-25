@@ -111,7 +111,7 @@ module.exports = {
     new webpack.DefinePlugin({
       "process.env"    : env
     }),
-    new CopyWebpackPlugin( CWP ),
+    //new CopyWebpackPlugin( CWP ),
     new webpack.ProvidePlugin({
       $                : "jquery",
       jQuery           : "jquery",

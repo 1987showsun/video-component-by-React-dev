@@ -1,9 +1,9 @@
 {
-  "name": "react-videoplayer-beta",
-  "version": "1.0.0",
+  "name": "react-player-beta",
+  "version": "1.0.1",
   "main": "commonjs/index.js",
-  "description": "React form",
-  "author": "showsun",
+  "description": "React player",
+  "author": "showsunli",
   "license": "ISC",
   "scripts": {
     "start": "NODE_ENV_CLOSE_LOG=true  NODE_ENV_REDUX_BUILD=true  NODE_ENV_UNONLINE=false NODE_ENV_APISTATUS=2 webpack-dev-server --colors --inline --content-base --history-api-fallback --open",
@@ -11,12 +11,13 @@
     "commonjs": "NODE_ENV_CLOSE_LOG=false NODE_ENV_REDUX_BUILD=false webpack"
   },
   "keywords": [
-    "form",
+    "player",
     "react",
-    "react form"
+    "react player"
   ],
   "dependencies": {
     "@opuscapita/react-perfect-scrollbar": "^3.0.3",
+    "axios": "^0.18.0",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "babel-preset-stage-2": "^6.24.1",
     "postcss-loader": "^2.1.6",
@@ -60,6 +61,6 @@
     "webpack-dev-server": "^2.3.0"
   },
   "engines": {
-    "node": "6.9.1"
+    "node": "8.12.0"
   }
 }

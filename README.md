@@ -2,7 +2,7 @@
 
 ## NPM
 ```js
-npm i react-videoplayer-beta
+npm i react-player-beta
 ```
 
 ## Demo
@@ -19,10 +19,21 @@ npm i react-videoplayer-beta
     }
   ]
 ```
-id       : render item key
-title    : playing video title
-src      : video file path/src
-poster   : video player init main image
+id       : render item key <br/>
+title    : playing video title <br/>
+src      : video file path/src <br/>
+poster   : video player init main image <br/>
+
+## Use
+```js
+  <Video
+    date = {"video list Object"} 
+    menu = {{
+      "switch" : false / true,
+      "title"  : "Menu head text"
+    }}
+  />
+```
 
 ## Api
 
