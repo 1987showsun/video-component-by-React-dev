@@ -11,6 +11,8 @@ npm i react-player-beta
 ## Demo
 [Demo](https://1987showsun.github.io/video-component-by-React-dev/index.html)
 
+![Demo1](https://s3-ap-northeast-1.amazonaws.com/showtest/Users/showsun/player+git+img/player.jpg)
+
 ## data
 ```json
   [
